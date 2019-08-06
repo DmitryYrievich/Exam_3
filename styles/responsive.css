@@ -1,0 +1,38 @@
+@media screen and (max-width: 1170px) {
+	body header .nav-bar {
+		padding-left: 10vw;
+		float: left;
+	}
+	body header .main-text {
+		font-size: 0.7em;
+	}
+	.container-wrap {
+		width: 800px;
+	}
+	body .services {
+	height: 1200px;
+	}
+	button {
+		width: 170px;
+		height: 50px;
+		font-size: 1em;
+	}
+	.get-in-touch-form__form .get-in-touch-form__button {
+		font-size: 1em;
+	}
+	footer .footer__social {
+		padding-right: 10vw;
+	}
+	h2 {
+		font-size: 1.5em;
+	}
+	body .services .services-columns__content__title {
+		font-size: 1.3em;
+	}
+	.get-in-touch-form__form .get-in-touch__form__input {
+		width: 100%;
+		margin-top: 10px;
+	}
+	.get-in-touch-form__form textarea {
+		height: 65%;
+}	
