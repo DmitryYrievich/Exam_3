@@ -12,6 +12,9 @@
 	body .services {
 	height: 1200px;
 	}
+	body .about-us__info p {
+		font-size: 1rem;;
+	}
 	button {
 		width: 170px;
 		height: 50px;
@@ -21,7 +24,11 @@
 		font-size: 1em;
 	}
 	footer .footer__social {
-		padding-right: 10vw;
+		left: 42%;
+		width: 20%;
+	}
+	footer .footer__info {
+		display: none;
 	}
 	h2 {
 		font-size: 1.5em;
@@ -35,4 +42,90 @@
 	}
 	.get-in-touch-form__form textarea {
 		height: 65%;
+	}	
+	.recent-works {
+		min-height: 1000px;
+	}
+	.map-home__info, .map-phone__info {
+		width: 200px;
+		padding: 0px 50px 0;
+	}
+	.recent-works__wrap .slider-leftarrow {
+		left: -50px;
+		top: 280px; 
+	}
+	.recent-works__wrap .slider-rightarrow {
+		right: -50px;
+		top: 280px; 
+	}
+	.our-team-wraper__right {
+	    left: 795px;
+	    top: 250px;
+	    cursor: pointer;
+	} 
+	.our-team-wraper__left {
+	    right: 795px;
+	    top: 250px;
+	    cursor: pointer;
+	}     	
+}
+
+@media screen and (max-width: 900px) {
+	.container-wrap {
+		width: 400px;
+	}
+	body .about-us__card {
+	    width: 95%;
+		height: 300px;
+	    background: url(../img/about.jpeg);
+	    background-color: #7c79ff;
+	    background-repeat: no-repeat;
+	}
+	body .services .services-columns {
+		padding-top: 30px;
+	}	
+	body .about-us__info {
+	    width: 100%; 
+	    padding: 100px 0 10px 0;
+	    line-height: 1.5em; 
+    }
+	body .services .services-columns {
+	    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	    grid-template-rows: repeat(1, 200px);
+	}
+    .services-columns__content {
+        padding: 27px 0 0;
+    }
+	body .services .services-columns__content__title {
+		font-size: 1.3em;
+		margin: 0;
+		padding: 5px;
+	}
+	.recent-works {
+	    min-height: 780px;
+	}    
+  	.recent-works__wrap .slider-leftarrow .slider-rightarrow {
+		display: none;
+	}
+	body header .nav-bar {
+	    float: left;
+	    display: flex;
+	    flex-direction: column;
+	    padding-left: 0;
+	    padding-top: 0;
+	}
+	body header .nav-bar li {
+		padding-top: 10px;
+	}	
+	.recent-works__wrap .slider-leftarrow {
+		left: -50px;
+		top: 135px; 
+	}
+	.recent-works__wrap .slider-rightarrow {
+		right: -50px;
+		top: 135px; 
+	} 
+	.scroll {
+		right: 70px;
+	}	
 }	

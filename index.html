@@ -14,22 +14,22 @@
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./styles/slick.css">
         <link rel="stylesheet" type="text/css" href="./styles/slick-theme.css">
-        <link rel="stylesheet" href="./styles/main.min.css">
+        <link rel="stylesheet" href="./styles/main.css">
         <link rel="stylesheet" href="./styles/responsive.css">
         <script src="https://kit.fontawesome.com/0d3712dcf6.js"></script>
         <title>Creative</title>
     </head>
     <body>
-        <header>
+        <header id="home">
             <div class="container-wrap">
                 <img class="nav-logo" src="./img/logo.png" alt="beet">
                 <nav class="clearfix">
                     <ul class="nav-bar">
-                        <li><a href="#nowhere">Home</a></li>
-                        <li><a href="#nowhere">About</a></li>
-                        <li><a href="#nowhere" >Services</a></li>
-                        <li><a href="#nowhere">Works</a></li>
-                        <li><a href="#nowhere">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services" >Services</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="main-text">
@@ -39,7 +39,7 @@
             </div>
         </header> 
 
-        <div class="about-us">
+        <div class="about-us" id="about">
             <div class="container-wrap">
                 <div class="about-us__card">
                     <img src="./img/aboutus.png" alt="about">
@@ -52,7 +52,7 @@
                 <button class="about-us__button">Learn More</button>  
             </div>    
         </div>
-        <div class="services">
+        <div class="services" id="services">
             <div class="container-wrap">
                 <div class="services-columns">
                     <div class="services-columns-grey">
@@ -94,7 +94,7 @@
             </div>
         </div>
 
-        <div class="recent-works">
+        <div class="recent-works" id="works">
             <div class="container-wrap">
                 <div class="recent-works__title">
                     <img src="./img/zub.png" alt="zub">
@@ -145,7 +145,29 @@
 
         <div class="get-in-touch">
             <div id="map" class="get-in-touch__map"></div>
-            <div class="cover"></div>
+            <a href="#home"><div class="scroll">
+                <img src="./img/scroll.png" alt="scroll">
+            </div></a>
+            <nav class="map__box clearfix">
+                <div class="map-home__box map-home__box--hidden">
+                    <div class="map-home__icon">
+                        <img src="./img/adressIcon.png" alt="icon">
+                    </div>
+                    <div class="map-home__info">
+                        Ikan Piranha Atas 220C Malang - East Java Indonesia
+                    </div>
+                </div>
+                <div class="map-phone__box map-phone__box--hidden">
+                    <div class="map-phone__icon">
+                        <img src="./img/phoneIcon.png" alt="icon">
+                    </div>
+                    <div class="map-phone__info">
+                        &nbsp; Phone number:
+                        <br>
+                        +6281235966914
+                    </div>
+                </div>
+            </nav>
             <div class="get-in-touch-form">
                 <form class="get-in-touch-form__form">
                     <input class="get-in-touch__form__input" type="text" name="Your name" placeholder="Your name *">
@@ -156,10 +178,9 @@
             </div> 
         </div>
 
-        <footer>
+        <footer id="contact">
             <div class="container-wrap">
-                <div class="footer__info">&copy;2014 <b>tulus</b>driyo. All Rights Reserved.
-                    
+                <div class="footer__info">&copy;2014 <b>tulus</b>driyo. All Rights Reserved.  
                 </div>
                 <ul class="footer__social">
                     <li><a href="https://www.behance.net"><i class="footer__social__icon fab fa-behance"></i></a></li>
@@ -317,6 +338,6 @@
     </script>
     <script 
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-Conpehdox7DavJ-IGmMAnSj4Q3wi1SQ&callback=initMap" async defer></script>
-    <script src="./js/main.min.js"></script>
+    <script src="./js/main.js"></script>
     </body>
 </html>
